@@ -11,11 +11,11 @@ export abstract class BaseEntity {
   id: number;
 
   /** Date at which the entity is persisted. */
-  @CreateDateColumn({ name: BaseContract.COL_CREATED_AT, type: 'date' })
+  @CreateDateColumn({ name: BaseContract.COL_CREATED_AT, type: 'timestamp with time zone' })
   createdAt: Date;
 
   /** Date at which the entity is persisted. */
-  @UpdateDateColumn({ name: BaseContract.COL_UPDATED_AT, type: 'date' })
+  @UpdateDateColumn({ name: BaseContract.COL_UPDATED_AT, type: 'timestamp with time zone' })
   updatedAt: Date;
 
   /** Determe if entity is disable. */
