@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>
+      {% if title %}
+      {{ title }}
+      {% else %}
+      My Wakeboard App
+      {% endif %}
+      </title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+
+    <!-- Skeleton is a simple, responsive boilerplate to kickstart any responsive project.
+          Check out http://getskeleton.com for documentation and details.-->
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/skeleton.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+
+    <div class="footer">
+      {% block footer %}(c) James Long 2012{% endblock %}
+    </div>
+  </body>
+</html>

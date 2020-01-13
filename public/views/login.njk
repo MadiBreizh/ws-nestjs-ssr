@@ -1,0 +1,27 @@
+{% extends "base.njk" %}
+
+{% block content %}
+<div class="container">
+  <form class="login-form" action="/login" method="post">
+    {% if message | length %}
+    <div class="row">
+      <p class="alert alert-error">{{ message }}</p>
+    </div>
+    {% endif %}
+    <div class="row">
+      <div class="five columns">
+        <label for="Username">Username</label>
+        <input class="u-full-width" type="text" placeholder="Username" id="username" name="username">
+      </div>
+      <div class="five columns">
+        <label for="Username">Password</label>
+        <input class="u-full-width" type="password" placeholder="Password" id="password" name="password">
+      </div>
+      <div class="two columns">
+        <label for="exampleEmailInput">&nbsp;</label>
+        <input class="button-primary" type="submit" value="Login">
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock %}
